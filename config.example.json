@@ -1,0 +1,44 @@
+{
+  "interface": "auto",
+  "thresholds": {
+    "syn_flood": 50,
+    "udp_flood": 1000,
+    "icmp_flood": 100,
+    "port_scan": 15,
+    "ping_sweep": 10,
+    "data_exfiltration_mb": 10,
+    "bruteforce_attempts": 50,
+    "slowloris_connections": 40,
+    "anomaly_score_limit": 100,
+    "window_seconds": 2,
+    "max_state_entries": 50000
+  },
+  "alert_cooldown_seconds": 20,
+  "alert_channels": {
+    "sound": true,
+    "webhook": {"enabled": false, "url": ""},
+    "email": {
+      "enabled": false,
+      "smtp_host": "",
+      "smtp_port": 587,
+      "username": "",
+      "password": "",
+      "to_addr": "",
+      "min_severity": "CRÍTICA"
+    }
+  },
+  "auto_response": {
+    "enabled": false,
+    "block_on_critical": false,
+    "method": "iptables",
+    "ttl_seconds": 900,
+    "protected_ips": []
+  },
+  "api": {
+    "enabled": false,
+    "port": 8787,
+    "token": ""
+  },
+  "theme": "dark",
+  "arp_bindings": {}
+}

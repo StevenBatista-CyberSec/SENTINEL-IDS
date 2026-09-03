@@ -1,0 +1,7 @@
+# SENTINEL IDS PRO v2.0 - Dependencias
+scapy>=2.5.0
+numpy>=1.21.0
+matplotlib>=3.4.2
+reportlab>=4.0.0
+flask>=3.0.0
+requests>=2.31.0
